@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_bk"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bar_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:background="#02B9BB"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/bar_right_imgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/search"
+        android:visibility="gone" />
+
+   	<TextView
+	    android:id="@+id/bar_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:textColor="#FFFFFF"
+	    android:textSize="22sp" >
+
+	</TextView>
+
+    <ImageButton
+        android:id="@+id/bar_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:visibility="gone" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/bar_btn_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ceo_record_tab_l" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/bar_txt_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bar_btn_mid"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:text="@string/txt_snapshot_title" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/bar_txt_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bar_btn_mid"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+         android:textColor="@color/black"
+        android:text="@string/txt_video_title"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="9"
+                android:background="#4FC0E8"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/baktextview"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/titletext"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/indexmiddletext"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/functext"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="@string/indexrighttext"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="25"
+                layout="@layout/index_infor_layout" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="80"
+                android:fillViewport="true" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <include
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="45"
+                        layout="@layout/index_menu_layout" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:background="@drawable/boder" >
+                    </LinearLayout>
+
+                    <include
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="10"
+                        layout="@layout/index_adver_layout" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="9"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/homeimage"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/home" />
+
+                <ImageView
+                    android:id="@+id/bookimage"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/book" />
+
+                <ImageView
+                    android:id="@+id/paiimage"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/pai" />
+
+                <ImageView
+                    android:id="@+id/cardimage"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/card" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/indexwaitimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>

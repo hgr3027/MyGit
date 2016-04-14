@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/all_bk"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/add_btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/add_infobk"
+        android:gravity="center" >
+        
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        	<ImageButton
+        	    android:id="@+id/btnWebAdd"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_centerHorizontal="true"
+        	    android:layout_marginBottom="3dp"
+        	    android:layout_marginTop="5dp"
+        	    android:background="@drawable/btn_add_web_switch" />
+
+        	<TextView
+        	    android:layout_width="150dp"
+        	    android:layout_height="wrap_content"
+        	    android:layout_below="@id/btnWebAdd"
+        	    android:layout_centerHorizontal="false"
+        	    android:layout_centerInParent="true"
+        	    android:gravity="center"
+        	    android:text="@string/txt_import_from_your_cloud_account"
+        	    android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        	<ImageButton
+        	    android:id="@+id/btnLocalAdd"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_centerHorizontal="true"
+        	    android:layout_marginBottom="3dp"
+        	    android:layout_marginTop="5dp"
+        	    android:background="@drawable/btn_add_local_switch" />
+
+        	 <TextView
+        	     android:layout_width="150dp"
+        	     android:layout_height="wrap_content"
+        	     android:layout_below="@id/btnLocalAdd"
+        	     android:layout_centerInParent="true"
+        	     android:gravity="center"
+        	     android:text="@string/txt_manually_add_device"
+        	     android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/add_btn_layout"
+        android:background="@drawable/all_bk"
+        android:orientation="vertical" >
+        
+	    <ListView
+	        android:id="@+id/lstCameraList"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="#DDDDDD"
+	        android:dividerHeight="0.5dp" />
+
+	    <TextView
+	        android:id="@+id/txt_null_device"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="center"
+	        android:text="@string/txt_Please_add_a_device"
+	        android:textColor="@color/white"
+	        android:textSize="20sp"
+	        android:visibility="gone" />
+	    
+    </RelativeLayout>
+
+</RelativeLayout>

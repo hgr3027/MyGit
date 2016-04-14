@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/all_bk"
+    android:orientation="vertical"
+    android:tag="@drawable/add_camwifibk" >
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/txt_Is_the_IP_camera_wired_or_wireless"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/Context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/txt_Please_connect_the_wired_IP"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="145dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/add_infobk" >
+        
+        <Button
+            android:id="@+id/Wired_button"
+            android:layout_width="110dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/btn_add_btnbk_switch"
+            android:minHeight="35dp"
+            android:text="@string/txt_Wired"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Wireless_button"
+            android:layout_width="110dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/btn_add_btnbk_switch"
+            android:minHeight="35dp"
+            android:text="@string/txt_Wireless"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/icon_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:src="@drawable/add_camwifibk" />
+    
+</RelativeLayout>

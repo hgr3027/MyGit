@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="none">无</string>
+    <string name="close">关闭</string>    
+    <string name="ignore">忽略</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="delete">删除</string>
+        
+    <!-- dialog title -->
+    <string name="dialog_AboutMe">关于</string>
+    <string name="dialog_AddCamera">增加摄像机</string>
+    <string name="dialog_EditCamera">修改摄像机</string>
+    <string name="dialog_AdvancedSetting">高级设置</string>
+    <string name="dialog_LanSearch">内网搜索</string>
+    <string name="dialog_EventSearch">事件搜索</string>
+    <string name="dialog_FormatSDCard">格式化 SDCard</string>
+    <string name="dialog_LiveView">实时影像</string>
+    <string name="dialog_Playback">录像回放</string>
+    <string name="dialog_Exit">确定退出吗？</string>
+    
+    
+    <!-- Login page -->
+    <string name="txt_auto_login">自动登入</string>
+    <string name="optDropbox">DropBox 录影</string>
+    <string name="txt_login">登入</string>
+    <string name="txt_Password">密码</string>
+    <string name="txt_forgot_Password">忘记密码</string>
+    <string name="txt_Sign_up">免费注册</string>
+    <string name="txt_Skip">略过 ></string>
+    <string name="txt_login_error">帐号或密码错误 </string>
+    <string name="txt_active_error">此帐号尚未启用，请至您注册的电子信箱中收取启用信并点击启用连结。</string>
+    
+    
+    <!--easy Wifi Setting page -->
+    <string name="txt_please_confirm_whether">请确认是否为您手机连线Wi-Fi</string>
+    <string name="txt_notusewifi">请连接Wi-Fi</string>
+    <string name="txt_Select_the_device">选取要新增的设备</string>
+    <string name="txt_Please_check_devices">帐号/密码请见装置或使用手册</string>
+    <string name="txt_Cannot_find_the_device">找不到设备</string>
+    <string name="txt_Add_device_to_your_account">新增至云端帐号</string>
+    <string name="txt_Sync_device_to_your_account">同步至云端帐号</string>
+    <string name="txt_Is_the_IP_camera_wired_or_wireless">请问您的摄影机为有线或无线设备?</string>
+    <string name="txt_Please_connect_the_wired_IP">有线设备请先连线</string>
+    <string name="txt_Wired">有线</string>
+    <string name="txt_Wireless">无线</string>
+    
+    <!--device on cloud page -->
+    <string name="txt_add">加入</string>
+    
+    <!-- Main page -->
+    <string name="ctxReconnect">重新连接</string>
+    <string name="ctxEditCamera">修改摄像机</string>
+    <string name="ctxViewEvent">查看事件</string>
+    <string name="ctxViewSnapshot">查看快照</string>
+    <string name="ctxRemoveCamera">删除摄像机</string>
+    <string name="optAddCamera">增加</string>
+    <string name="optAbout">关于</string>
+    <string name="optLogin">登入</string>
+    <string name="optLogout">登出</string>
+    <string name="optExplain">说明</string>
+    <string name="optExit">退出</string>
+    <string name="lstClickToAddCamera">请按此新增摄像机</string>
+    <string name="btnExit">退出</string>
+    <string name="btnCancel">取消</string>
+    <string name="btnRunInBackground">背景执行</string>
+    
+    <!-- About page -->
+    <string name="txtCopyRightInfo">Copyright 2013 All rights reserved.</string>
+    
+    <!-- Add camera page -->
+    <string name="txt_import_from_your_cloud_account">从云端帐号汇入</string>
+    <string name="txt_manually_add_device">手动新增</string>
+    <string name="txt_Please_add_a_device">尚无设备列表\n 请先新增摄影机</string>
+    
+    
+    <string name="txtName">名称:</string>
+    <string name="txtAddCamera">增加摄像机</string>
+    <string name="txtUID">UID:</string>
+    <string name="txtSecurityCode">密码:</string>
+	<string name="btnScan">扫描条码</string>
+	<string name="btnSearch">搜索</string>
+		    
+    <!-- Edit camera page -->
+	<string name="txtDeviceSetting">设备设置</string>
+	<string name="txtAdvancedSetting">高级设置</string>
+	<string name="btnAdvanced">设置</string>
+	
+	<!-- Modify security code page -->
+	<string name="txtOldPassword">旧密码:</string>
+	<string name="txtNewPassword">新密码:</string>
+	<string name="txtConfirmPassword">新密码确认:</string>
+	
+	<!-- Live View page -->
+	<string name="txtFPS">FPS:</string>
+	<string name="txtBPS">bps:</string>
+	<string name="txtOnlineNumber">在线人数:</string>
+	<string name="txtFrameRatio">掉包率:</string>
+	<string name="txtTurnOffAudio">关闭所有声音</string>
+	<string name="txtTurnOnSpeaker">开启扬声器</string>
+	<string name="txtTurnOnMicrophone">开启麦克风</string>
+	<string name="txtAudioOff">声音关闭</string>
+	<string name="txtSpeaker">扬声器</string>
+	<string name="txtMicrophone">麦克风</string>
+	<string name="txtMute">静音</string>
+	<string name="txtListen">监听</string>
+	<string name="txtListening">监听中</string>
+	<string name="txtSpeak">通话</string>
+	<string name="txtSpeaking">通话中</string>
+	<string name="txtQuality">收视状况:</string>
+	<string name="txtGood">佳</string>
+	<string name="txtNormal">普通</string>
+	<string name="txtBad">差</string>
+	
+	<!-- Event playback page -->
+	<string name="txtEventType">事件类型:</string>
+	<string name="txtEventTime">事件时间:</string>
+	
+	<!-- Event list page -->
+	<string name="txtSearchEventDuration">搜索事件区间:</string>
+	<string name="pull_to_refresh">下拉可以刷新</string>
+	<string name="release_to_refresh">釋放立即刷新</string>
+	<string name="refreshing">正在刷新...</string>
+	
+	<!-- Event search page -->
+	<string name="txtSearchEventFrom">从</string>
+	<string name="txtSearchEventTo">到</string>
+	<string name="txtSearchEventType">事件</string>
+	<string name="txtLoadEventList">读取&#8230;</string>
+	<string name="txtNoResultFound">未找到任何记录</string>
+	
+	<!-- LAN search page -->
+	<string name="btnRefresh">刷新</string>
+
+	<!-- Format SDCard page -->
+	<string name="btnFormat">格式化</string>
+	<string name="txtFormatSDCardTitle">侦测无法识别SDCard</string>
+	<string name="txtFormatSDCardDesc">必须进行格式化后方得继续使用录像功能，格式化指令将会清除SDCard内所有数据。</string>
+	<string name="chbShowTipsFormatSDCard">当侦测到无法识别SDCard时显示此讯息</string>
+		
+	<!-- No connection page -->
+	<string name="txtNoNetworkConnection">未连上网络</string> 
+	<string name="txtCameraOffline">装置脱机</string>
+	<string name="btnRetry">重试</string>
+	
+	<!-- No photos page -->
+	<string name="txtNoPhotos">空相簿</string>
+	<string name="txtNoPhotosDetail">该相簿里无任何快照</string>
+	    	    
+	<!-- IOTCAPIs -->
+	<string name="IOTC_ER_NOT_INITIALIZED">IOTC initialize failed</string>
+	<string name="IOTC_ER_CONNECT_IS_CALLING">IOTC_Connect_ByXX() is calling</string>
+	<string name="IOTC_ER_FAIL_RESOLVE_HOSTNAME">Can\'t resolved server\'s domain name</string>
+	<string name="IOTC_ER_SERVER_NOT_RESPONSE">Server not response</string>
+	<string name="IOTC_ER_FAIL_GET_LOCAL_IP">Can\'t Get local IP</string>
+	<string name="IOTC_ER_UNLICENSE">UID is not registered</string>
+	<string name="IOTC_ER_EXCEED_MAX_SESSION">Exceed the max session number</string>
+	<string name="IOTC_ER_TIMEOUT">Timeout</string>
+	<string name="IOTC_ER_DEVICE_NOT_LISTENING">The device is not on listening</string>
+	<string name="IOTC_ER_CAN_NOT_FIND_DEVICE">Can\'t not found device</string>
+	
+	<!-- AVAPIs -->
+	<string name="AV_ER_INVALID_ARG">Invalid session ID</string>
+	<string name="AV_ER_EXCEED_MAX_SESSION">Exceed the max session number</string>
+	<string name="AV_ER_FAIL_CREATE_THREAD">Failed to create thread</string>
+	<string name="AV_ER_SERV_NO_RESPONSE">Server not response</string>
+	<string name="AV_ER_TIMEOUT">Timeout</string>
+	<string name="AV_ER_SESSION_CLOSE_BY_REMOTE">Remote site closed this session</string>
+	<string name="AV_ER_REMOTE_TIMEOUT_DISCONNECT">Session is disconnected because timeout</string>
+	<string name="AV_ER_INVALID_SID">Session ID was invalid</string>	 
+		    
+	<!-- Connection Status -->
+	<string name="connstus_connecting">连接中&#8230;</string>
+	<string name="connstus_connected">在线</string>
+	<string name="connstus_disconnect">离线</string>
+	<string name="connstus_unknown_device">未知设备</string>
+	<string name="connstus_connection_failed">连接失败</string>
+	<string name="connstus_wrong_password">错误密码</string>
+	<string name="connection_timeout">连线逾时</string>
+	
+	<!-- Connection Mode -->
+	<string name="connmode_p2p">P2P</string>
+	<string name="connmode_relay">Relay</string>
+	<string name="connmode_lan">局域網</string>
+	<string name="connmode_none">无</string>
+	
+	<!-- Event type -->
+	<string name="evttype_all">全部</string>
+	<string name="evttype_motion_detection">移动侦测</string>
+	<string name="evttype_video_lost">视频中断</string>
+	<string name="evttype_io_alarm">IO 报警</string>
+	<string name="evttype_motion_pass">移动侦测</string>
+	<string name="evttype_video_resume">视频恢复</string>
+	<string name="evttype_io_alarm_pass">IO 报警</string>
+	<string name="evttype_expt_reboot">系统异常重启</string>
+	<string name="evttype_sd_fault">SD卡错误</string>
+	<string name="evttype_fulltime_recording">全时录像</string>
+
+	    
+	<!-- Tips -->
+	<string name="tips_warning">警告</string>
+	<string name="tips_add_camera_ok">成功添加摄像机。</string>
+	<string name="tips_edit_camera_ok">成功修改摄像机。</string>
+	<string name="tips_remove_camera_ok">成功删除摄像机。</string>
+	<string name="tips_add_camera_duplicated">该摄影机已存在，请输入另一个[UID]。</string>
+    <string name="tips_camera_name">请输入[摄像机名称]。</string>    
+    <string name="tips_dev_uid">请输入 [UID]。</string>
+    <string name="tips_dev_uid_not">不存在此 [UID]。</string>
+    <string name="tips_dev_uid_character">[UID] 必须输入20个字符。</string>
+    <string name="tips_dev_security_code">请输入[密码].</string>
+    <string name="tips_remove_camera_monitor_confirm">是否移除该摄影画面?</string>
+    <string name="tips_remove_camera_confirm">是否删除该摄像机?</string>
+    <string name="tips_remove_camera">删除摄像机</string>
+    <string name="tips_snapshot_ok">成功拍照</string>
+    <string name="tips_snapshot_failed">拍照失败</string> 
+    <string name="tips_all_field_can_not_empty">请输入所有选项。</string>
+    <string name="tips_old_password_is_wrong">旧密码输入错误。</string>    
+    <string name="tips_new_passwords_do_not_match">两次输入的新密码不一致。</string>    
+    <string name="tips_modify_security_code_ok">成功修改密码.该摄像机稍后会重新连接。</string>
+    <string name="tips_wifi_retrieving">获取中&#8230;</string>   
+    <string name="tips_wifi_connecting">连接中&#8230;</string>
+    <string name="tips_wifi_connected">已连接</string>
+    <string name="tips_wifi_disconnect">未连接</string>
+	<string name="tips_wifi_remote_device_timeout">远端装置无回应</string>
+	<string name="tips_wifi_remote_device_connecting">远端装置连线中</string>
+    <string name="tips_wifi_wrongpassword">密码错误</string>
+    <string name="tips_wifi_ready">已准备</string>
+    <string name="tips_wifi_weak_signal">已连接 (讯号微弱)</string>    
+    <string name="tips_wifi_connect_failed">未连上网络.</string> 
+    <string name="tips_no_barcode_scanner">您的手机未安装条形码扫描软件，是否现在下载?</string>
+    <string name="tips_no_sdcard">您的手机未安装SD卡。</string>
+	<string name="tips_search_event_no_result">未找到任何记录。</string>
+	<string name="tips_play_record_failed">播放录像失败。</string>
+	<string name="tips_play_record_end">该录像已播放完毕。</string>
+	<string name="tips_play_record_timeout">无法获取远程录像档。</string>	
+	<string name="tips_search_within_an_hour">一小时内</string>
+	<string name="tips_search_within_half_a_day">半天内</string>
+	<string name="tips_search_within_a_day">一天内</string>
+	<string name="tips_search_within_a_week">一周内</string>
+	<string name="tips_search_custom">自定义</string>
+	<string name="tips_format_sdcard_confirm">格式化命令将于清除SDCard内所有数据，继续?</string>	
+	<string name="tips_format_sdcard_success">格式化成功</string>
+	<string name="tips_format_sdcard_failed">格式化失败</string>
+	<string name="tips_no_snapshot_found">查无快照</string>
+	
+	<!-- Notification -->
+	<string name="ntfAppRunning">%s 正在执行中&#8230;</string>
+    <string name="ntfIncomingEvent">从 %s 接收事件警示</string>
+    <string name="ntfIncomingMultipleEvent">新进事件，共 %d 摄影机</string>
+    <string name="ntfCameraRunning">摄影机联机中 (%d)</string>	    
+    <string name="ntfLastEventIs">新进事件: %s</string>
+    <string name="ntfLastEventFrom">新进事件: %s</string>	    
+    
+    <!-- Image Description -->
+    <string name="imgDesc_EventDetail">View Event Detail</string>
+    <string name="imgDesc_NoPhotos">No Photos</string>
+
+    <!-- Snapshot Gallery -->
+    <!-- Delete Snapshot -->
+    <string name="dlgAreYouSureToDeleteThisSnapshot">要删除此图片吗？</string>
+    <string name="dlgDeleteSnapshotYes">确定</string>
+    <string name="dlgDeleteSnapshotNo">取消</string>
+    
+    <!--LinkDropbox page -->
+	<string name="txtlink">连线至Dropbox</string> 
+	<string name="txtunlink">从Dropbox断线</string>
+	
+	<!--LiveView page -->
+	<string name="txt_reflash_speaker">按住进行通话</string>
+    <string name="txt_alarm_switch">强制警报开关</string>
+    <string name="txt_preset_switch">点选  移至预置位        长按  储存当前视角</string>
+    <string name="txt_fir_switch">红外线警报开关</string>
+    <string name="txt_Digital_Zoom">数位变焦</string>	
+	<string name="txt_Optica_Zoom">光学变焦</string>	
+	
+	<string name="txt_move_Alarm_Input_Devices">输入报警设备</string>	
+	<string name="txt_move_Preset_alarm_linkage">报警预置位连动</string>
+	<string name="txt_if_sync_to_cloud">是否与云端帐号同步？</string>
+	<!--End LiveView page -->
+	
+	<string name="txt_sync_to_cloud">同步到云端帐号</string>
+	<string name="txt_sync">同步:</string>
+	<string name="txt_edit">编辑</string>
+	<string name="txt_done">完成</string>
+    
+	<string name="txt_upload_cloud_success">已成功新增至云端帐号</string>
+	<string name="txt_upload_cloud_fail">新增至云端帐号失败。请您至设备设定页面勾选”与云端帐号同步”再次新增</string>
+	<string name="txt_logout_warning">登出之后，您的设备将取消与云端帐号同步。下次登入时您可以至设备设定页面勾选”与云端帐号同步”。请您确认是否登出?</string>
+	<string name="txt_no_device_avaliable">尚无可汇入设备</string>
+	<string name="txt_please_login_your_cloud_account">请先登入云端帐号</string>
+	
+	<string name="txt_reconnect_camera">重新连线</string>
+	
+	<string name="txt_snapshot_title">影像快照</string>
+	<string name="txt_video_title">录影纪录</string>
+	<string name="recording_tips_size">储存空间即将不足</string>
+	<string name="recording_tips_format">不支援格式</string>
+	<string name="dlgAreYouSureToDeleteThisRecord">是否要删除此影片？</string>
+	
+	<string name="dialog_no_app">播放器不支援</string>	
+	<string name="txt_intent_to_app">因为您的手机播放器不支援播放此档案，需要下载额外的播放软体来观看此影片(MX Player)</string>
+	
+	<string name="switch_codec_config">切换解码设定</string>
+	<string name="force_to_software_decode">强制软体解码</string>
+	<string name="switch_codec_config_msg">当播放体验不佳时，可开启此功能，视讯播放将强制以软体解码。</string>
+	<string name="recording_fail">录像失败</string>
+	
+</resources>

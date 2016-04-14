@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/liveview_info"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <!--
+		<TextView
+			android:id="@+id/txtCameraName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/txtName"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:textSize="16sp" 
+			android:textStyle="bold"
+			android:textColor="#000000"/>      -->
+
+        <LinearLayout
+            android:id="@+id/pnlCameraInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtConnectionStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/live_unknow"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtConnectionSlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtConnectionMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white" />
+                
+                <TextView
+                    android:id="@+id/txtCodecMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtResolution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtResolutionSlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtShowFPS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtFPS"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtFrameRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtFPSSlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtShowBPS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtBPS"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtBitRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtShowOnlineNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtOnlineNumber"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtOnlineNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtOnlineNumberSlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtShowFrameRatio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtFrameRatio"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtIncompleteFrameCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtFrameCountSlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtFrameCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtQuality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtQuality"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtPerformance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtDispFrmPreSeco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtRecvFrmSlash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/txtRecvFrmPreSec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/pnlButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="right" >
+
+            <ImageButton
+                android:id="@+id/CH_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ipcam_ch"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/CH_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:text="1 CH" />
+        </RelativeLayout>
+    </LinearLayout>
+  <!--       android:layout_weight="3.2" -->
+    <com.tutk.P2PCam264.VerticalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3.6"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <com.tutk.IOTC.MediaCodecMonitor
+                        android:id="@+id/monitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </com.tutk.P2PCam264.VerticalScrollView>
+
+    <LinearLayout
+        android:id="@+id/null_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.4"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/speaker_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.8"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btn_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_call_on_switch" />
+
+        <Button
+            android:id="@+id/speaker_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/btn_speaker"
+            android:background="@drawable/leo_micinfo"
+            android:minHeight="20dip"
+            android:text="@string/txt_reflash_speaker"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/qvga_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.8"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/qvga_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/toolinfo_bk"
+            android:minHeight="20dip"
+            android:text="@string/txtmQuality"
+            android:textColor="@color/white" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qvga_text"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_weight="1.8"
+            android:overScrollMode="never"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/qvga_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_qualitylist_switch"
+                    android:minHeight="20dip"
+                    android:text="@string/txtVideoQualityMax"
+                    android:textColor="@drawable/txt_list_bg_color" />
+
+                <Button
+                    android:id="@+id/qvga_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qvga_button1"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/btn_qualitylist_switch"
+                    android:minHeight="20dip"
+                    android:text="@string/txtVideoQualityHigh"
+                    android:textColor="@drawable/txt_list_bg_color" />
+
+                <Button
+                    android:id="@+id/qvga_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qvga_button2"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/btn_qualitylist_switch"
+                    android:minHeight="20dip"
+                    android:text="@string/txtVideoQualityMedium"
+                    android:textColor="@drawable/txt_list_bg_color" />
+
+                <Button
+                    android:id="@+id/qvga_button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qvga_button3"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/btn_qualitylist_switch"
+                    android:minHeight="20dip"
+                    android:text="@string/txtVideoQualityLow"
+                    android:textColor="@drawable/txt_list_bg_color" />
+
+                <Button
+                    android:id="@+id/qvga_button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/qvga_button4"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/btn_qualitylist_switch"
+                    android:minHeight="20dip"
+                    android:text="@string/txtVideoQualityMin"
+                    android:textColor="@drawable/txt_list_bg_color" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/emode_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.8"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/emode_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/toolinfo_bk"
+            android:minHeight="20dip"
+            android:text="@string/txtmEnvironment"
+            android:textColor="@color/white" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emode_text"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_weight="1.8"
+            android:overScrollMode="never"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/emode_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_qualitylist_switch"
+                    android:minHeight="20dip"
+                    android:text="@string/txtmEnvironment50"
+                    android:textColor="@drawable/txt_list_bg_color" />
+
+                <Button
+                    android:id="@+id/emode_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emode_button1"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/btn_qualitylist_switch"
+                    android:minHeight="20dip"
+                    android:text="@string/txtmEnvironment60"
+                    android:textColor="@drawable/txt_list_bg_color" />
+
+                <Button
+                    android:id="@+id/emode_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emode_button2"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_qualitylist_switch"
+                    android:minHeight="20dip"
+                    android:text="@string/txtmEnvironmentout"
+                    android:textColor="@drawable/txt_list_bg_color" />
+
+                <Button
+                    android:id="@+id/emode_button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emode_button3"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_qualitylist_switch"
+                    android:minHeight="20dip"
+                    android:text="@string/txtmEnvironmentnight"
+                    android:textColor="@drawable/txt_list_bg_color" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_bk"
+        android:gravity="center" >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/tool_bar" />
+    </RelativeLayout>
+
+</LinearLayout>

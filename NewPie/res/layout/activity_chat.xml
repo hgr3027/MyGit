@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myattr="http://schemas.android.com/apk/res/com.example.newpie"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/chattitle"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="9"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="114"
+        android:orientation="vertical" 
+        android:background="#F6FBFF">
+
+        <include
+            android:id="@+id/chatmain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/chatmain" 
+            />
+
+        <include
+            android:id="@+id/chatmenu"
+            android:layout_width="fill_parent"
+            android:layout_height="30px"
+            layout="@layout/chatmenu" />
+    </LinearLayout>
+
+</LinearLayout>

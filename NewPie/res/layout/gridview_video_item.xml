@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center">
+    
+   	<ImageView android:id="@+id/video_image"
+        android:layout_width="fill_parent"
+        android:layout_height="35pt"
+        android:layout_centerInParent="true"
+        >
+    </ImageView>
+    
+   	<ImageView android:id="@+id/video_image_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ceo_record_play"
+        >
+    </ImageView>
+    
+	<TextView 
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/video_text"
+        android:textSize="9pt"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_below="@+id/video_image"
+        android:layout_marginTop="50dp">
+    </TextView>
+
+	<ImageView
+	    android:id="@+id/video_image_check"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	     android:layout_below="@+id/video_image"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="25dp"
+	    android:src="@drawable/delet_choose" />
+
+</RelativeLayout>

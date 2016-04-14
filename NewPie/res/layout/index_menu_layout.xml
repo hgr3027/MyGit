@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:stretchColumns="0,1,2,3" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/pic1layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic1"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/gsxw" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str1"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic2"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/tzgg" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str2"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic3"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/ggwd" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str3"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- 地图 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic4"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/dddt" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str4"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic5"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/bmxx" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str5"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic6"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/bmgx" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str6"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic7"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/bmlt" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str7"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic8"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/bmfz" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str8"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic9"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/wdpq" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str9"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic10"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/grrw" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str10"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic11"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/bwl" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str11"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/pic12"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="25"
+                android:src="@drawable/grcx" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="15"
+                android:gravity="top|center_horizontal"
+                android:text="@string/str12"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>

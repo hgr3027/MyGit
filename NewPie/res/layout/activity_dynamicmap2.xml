@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/maptitle"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="9"
+                layout="@layout/title_bar" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="114"
+                android:background="#F6FBFF"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="95" >
+
+                    <com.baidu.mapapi.map.MapView
+                        android:id="@+id/bmapView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/photoclosell"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="10"
+                    android:background="@drawable/boder2"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp" >
+
+                    <ImageView
+                        android:id="@+id/mapphotoimage"
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/photo" />
+                    
+                    <ImageView
+                        android:id="@+id/mapphotoimage2"
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/open1"/>
+                    
+                    <Button
+                        android:id="@+id/mapocbutton"
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/mapopenbuttonbackground"
+                        android:minHeight="0dp"
+                        android:text="@string/mapopenbuttontext"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+                    
+                    
+                    
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mapwaitimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>

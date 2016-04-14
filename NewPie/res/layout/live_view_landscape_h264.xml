@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+  	  <com.tutk.P2PCam264.VerticalScrollView
+  	      android:id="@+id/scrollView"
+  	      android:layout_width="fill_parent"
+  	      android:layout_height="fill_parent"
+  	      android:background="@color/black" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <com.tutk.IOTC.MediaCodecMonitor
+                        android:id="@+id/monitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </com.tutk.P2PCam264.VerticalScrollView> 
+  	  
+  	 <RelativeLayout
+  	     android:id="@+id/toolbar_layout"
+  	     android:layout_width="fill_parent"
+  	     android:layout_height="wrap_content"
+  	     android:layout_alignParentBottom="true"
+  	     android:background="@drawable/toolbar_bk"
+  	     android:gravity="center" >
+	    	
+	    	<include android:id="@+id/toolbar" layout="@layout/tool_bar" />
+  			
+  	 </RelativeLayout>
+  	  
+    <LinearLayout
+        android:id="@+id/null_layout"
+        android:layout_width="300dip"
+        android:layout_height="300dip"
+        android:layout_above="@id/toolbar_layout"
+        android:layout_centerHorizontal="true"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+	<RelativeLayout
+	    android:id="@+id/speaker_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="300dip"
+	    android:layout_above="@id/toolbar_layout"
+	    android:layout_alignParentBottom="false"
+	    android:layout_centerHorizontal="true"
+	    android:background="#00FFFFFF"
+	    android:orientation="vertical" >
+
+    	<ImageButton
+       		android:id="@+id/btn_speaker"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/btn_call_on_switch"
+        	android:layout_alignParentBottom="true"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginBottom="5dp"
+        	android:layout_marginRight="5dp" />
+
+    	<Button
+    	    android:id="@+id/speaker_text"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentBottom="true"
+    	    android:layout_marginBottom="5dp"
+    	    android:layout_toLeftOf="@+id/btn_speaker"
+    	    android:background="@drawable/leo_micinfo"
+    	    android:minHeight="20dip"
+    	    android:text="@string/txt_reflash_speaker"
+    	    android:textColor="@color/white" />
+
+    </RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/qvga_layout"
+	    android:layout_width="300dip"
+	    android:layout_height="300dip"
+	    android:layout_above="@id/toolbar_layout"
+	    android:layout_alignParentBottom="false"
+	    android:layout_centerHorizontal="true"
+	    android:background="#00FFFFFF"
+	    android:orientation="vertical" >
+    	
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:orientation="vertical" >
+
+    	 <Button
+    	     android:id="@+id/qvga_text"
+    	     android:layout_width="wrap_content"
+    	     android:layout_height="wrap_content"
+    	     android:layout_centerHorizontal="true"
+    	     android:background="@drawable/toolinfo_bk"
+    	     android:minHeight="20dip"
+    	     android:text="@string/txtmQuality"
+    	     android:textColor="@color/white" />
+
+	     <ScrollView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@id/qvga_text"
+	         android:layout_centerInParent="true"
+	         android:gravity="center_vertical"
+	         android:overScrollMode="never"
+	         android:scrollbarAlwaysDrawVerticalTrack="true"
+	         android:scrollbars="none" >
+
+	  	<RelativeLayout
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="0dip"
+	  	    android:layout_gravity="center_vertical|center_horizontal"
+	  	    android:orientation="vertical" >
+
+    	<Button
+    	    android:id="@+id/qvga_button1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="5dp"
+    	    android:background="@drawable/btn_qualitylist_switch"
+    	    android:minHeight="20dip"
+    	    android:text="@string/txtVideoQualityMax"
+    	    android:textColor="@drawable/txt_list_bg_color" />
+    	
+    	<Button
+    	    android:id="@+id/qvga_button2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/qvga_button1"
+    	    android:layout_marginTop="5dp"
+    	    android:background="@drawable/btn_qualitylist_switch"
+    	    android:minHeight="20dip"
+    	    android:text="@string/txtVideoQualityHigh"
+    	    android:textColor="@drawable/txt_list_bg_color" />
+    	
+    	<Button
+    	    android:id="@+id/qvga_button3"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/qvga_button2"
+    	    android:layout_marginTop="5dp"
+    	    android:background="@drawable/btn_qualitylist_switch"
+    	    android:minHeight="20dip"
+    	    android:text="@string/txtVideoQualityMedium"
+    	    android:textColor="@drawable/txt_list_bg_color" />
+
+    	<Button
+    	    android:id="@+id/qvga_button4"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/qvga_button3"
+    	    android:layout_marginTop="5dp"
+    	    android:background="@drawable/btn_qualitylist_switch"
+    	    android:minHeight="20dip"
+    	    android:text="@string/txtVideoQualityLow"
+    	    android:textColor="@drawable/txt_list_bg_color" />
+
+    	<Button
+    	    android:id="@+id/qvga_button5"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/qvga_button4"
+    	    android:layout_marginTop="5dp"
+    	    android:background="@drawable/btn_qualitylist_switch"
+    	    android:minHeight="20dip"
+    	    android:text="@string/txtVideoQualityMin"
+    	    android:textColor="@drawable/txt_list_bg_color" />
+    	  </RelativeLayout>
+		  </ScrollView>
+		  </RelativeLayout>
+    </RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/emode_layout"
+	    android:layout_width="300dip"
+	    android:layout_height="300dip"
+	    android:layout_above="@id/toolbar_layout"
+	    android:layout_alignParentBottom="false"
+	    android:layout_centerHorizontal="true"
+	    android:background="#00FFFFFF"
+	    android:orientation="vertical" >
+
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:orientation="vertical" >
+
+    	 <Button
+    	     android:id="@+id/emode_text"
+    	     android:layout_width="wrap_content"
+    	     android:layout_height="wrap_content"
+    	     android:layout_centerHorizontal="true"
+    	     android:background="@drawable/toolinfo_bk"
+    	     android:minHeight="20dip"
+    	     android:text="@string/txtmEnvironment"
+    	     android:textColor="@color/white" />
+
+	     <ScrollView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@id/emode_text"
+	         android:layout_centerInParent="true"
+	         android:gravity="center_vertical"
+	         android:overScrollMode="never"
+	         android:scrollbarAlwaysDrawVerticalTrack="true"
+	         android:scrollbars="none" >
+
+	  	<RelativeLayout
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="fill_parent"
+	  	    android:orientation="vertical" >
+
+    	<Button
+    	    android:id="@+id/emode_button1"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="5dp"
+    	    android:background="@drawable/btn_qualitylist_switch"
+    	    android:minHeight="20dip"
+    	    android:text="@string/txtmEnvironment50"
+    	    android:textColor="@drawable/txt_list_bg_color" />
+    	
+    	<Button
+    	    android:id="@+id/emode_button2"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/emode_button1"
+    	    android:layout_marginTop="5dp"
+    	    android:background="@drawable/btn_qualitylist_switch"
+    	    android:minHeight="20dip"
+    	    android:text="@string/txtmEnvironment60"
+    	    android:textColor="@drawable/txt_list_bg_color" />
+    	
+    	<Button
+    	    android:id="@+id/emode_button3"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/emode_button2"
+    	    android:layout_marginTop="5dp"
+    	    android:background="@drawable/btn_qualitylist_switch"
+    	    android:minHeight="20dip"
+    	    android:text="@string/txtmEnvironmentout"
+    	    android:textColor="@drawable/txt_list_bg_color" />
+    	
+    	<Button
+    	    android:id="@+id/emode_button4"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_below="@id/emode_button3"
+    	    android:layout_marginTop="5dp"
+    	    android:background="@drawable/btn_qualitylist_switch"
+    	    android:minHeight="20dip"
+    	    android:text="@string/txtmEnvironmentnight"
+    	    android:textColor="@drawable/txt_list_bg_color" />
+    	
+    	
+    	  </RelativeLayout>
+		  </ScrollView>
+		  </RelativeLayout>
+    </RelativeLayout>
+    	
+</RelativeLayout>   

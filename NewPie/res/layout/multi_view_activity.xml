@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/all_bk"  >
+    
+    <RelativeLayout
+        android:id="@+id/Relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+         android:background="#02b8bb"
+        android:layout_weight="1" >
+
+    </RelativeLayout>
+    
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Relative"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:layout_weight="3"
+        android:background="#02b8bb"
+        android:padding="3dp"
+        android:scaleType="fitXY" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/liveviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/indicator"
+        android:layout_centerVertical="true" />
+    
+
+	
+</RelativeLayout>

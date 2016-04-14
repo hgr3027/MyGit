@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <attr name="rightPadding" format="dimension" />
+    <attr name="bottomPadding" format="dimension" />
+
+    <declare-styleable name="MySlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+    <declare-styleable name="ChatSlidingMenu">
+        <attr name="bottomPadding" />
+    </declare-styleable>
+
+</resources>

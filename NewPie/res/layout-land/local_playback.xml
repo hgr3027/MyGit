@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:id="@+id/button_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ceo_rcplay_bg_h"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_playpause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_play_h"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/seeking_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ceo_rcplay_bg_h"
+        android:gravity="center" >
+
+        <SeekBar
+            android:id="@+id/sbVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_total"
+            android:layout_centerHorizontal="true"
+            android:maxHeight="5dip"
+            android:minHeight="5dip"
+            android:maxWidth="400dip"            
+            android:minWidth="400dip"
+            android:progressDrawable="@drawable/ceo_rcplay_line_full_h"
+            android:thumb="@drawable/ceo_rcplay_time_h"
+            android:thumbOffset="0dip" />
+
+        <TextView
+            android:id="@+id/txt_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sbVideo"
+            android:layout_toLeftOf="@+id/sbVideo"
+            android:text="--:--" />
+
+        <TextView
+            android:id="@+id/txt_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sbVideo"
+            android:text="--:--" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

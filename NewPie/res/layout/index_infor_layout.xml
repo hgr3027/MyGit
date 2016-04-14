@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="16"
+        android:background="@drawable/background"
+        android:orientation="horizontal" >
+
+        <com.example.newpie.utils.RoundImageView
+            android:id="@+id/head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="20"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/nametext"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/departmenttext"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/positiontext"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/qrcode"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:src="@drawable/qrcode" />
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:paddingRight="10dp"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="10"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:scaleType="fitXY"
+            android:src="@drawable/mail" />
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:scaleType="fitXY"
+            android:src="@drawable/examination" />
+
+        <ImageView
+            android:id="@+id/infor"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boder"
+            android:scaleType="fitXY"
+            android:src="@drawable/infor" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myattr="http://schemas.android.com/apk/res/com.example.newpie"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/addresslisttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="9"
+        layout="@layout/title_bar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="114" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#F6FBFF"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/addresslistlistview"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="150"
+                android:divider="#aaa"
+                android:dividerHeight="1px" >
+            </ListView>
+
+            <ImageView
+                android:id="@+id/listviewimage"
+                android:layout_width="fill_parent"
+                android:layout_height="8dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/addresslistwaitimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" 
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</LinearLayout>

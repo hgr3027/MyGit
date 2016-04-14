@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myattr="http://schemas.android.com/apk/res/com.example.newpie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.testandroid.MainActivity" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.example.newpie.utils.MySlidingMenu
+            android:id="@+id/myhs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            myattr:rightPadding="30dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/show_play_001" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/show_play_002" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/show_play_003" />
+                
+                <include
+                    android:id="@+id/includelog"
+                    layout="@layout/activity_login" />
+
+                <include
+                    layout="@layout/activity_guide" />
+            </LinearLayout>
+        </com.example.newpie.utils.MySlidingMenu>
+
+        <ImageView
+            android:id="@+id/waitimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+
+    <Button
+        android:id="@+id/btn_onDropbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_moreset_list1_switch"
+        android:text="@string/optDropbox"
+        android:textColor="@color/white"  />
+    
+    <Button
+        android:id="@+id/btn_switch_codec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_moreset_listm_switch"
+        android:text="@string/switch_codec_config"
+        android:textColor="@color/white"  />
+
+    <Button
+        android:id="@+id/btn_infomation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_moreset_list2_switch"
+        android:text="@string/optAbout" 
+        android:textColor="@color/white" />
+    
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ceo_rcplay_bg"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="6" >
+        <VideoView
+        	android:id="@+id/videoView"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	 />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_playpause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_play" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/seeking_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/sbVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbOffset="0dip" 
+            android:minWidth="260dip" 
+            android:maxWidth="260dip" 
+            android:minHeight="5dip" 
+            android:maxHeight="5dip"
+            android:progressDrawable="@drawable/ceo_rcplay_line"
+            android:thumb="@drawable/ceo_rcplay_time"  />
+
+        <TextView
+            android:id="@+id/txt_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sbVideo"
+            android:layout_below="@+id/sbVideo"
+            android:text="--:--" />
+
+        <TextView
+            android:id="@+id/txt_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/sbVideo"
+            android:layout_below="@+id/sbVideo"
+            android:text="--:--" />
+
+    </RelativeLayout>
+
+</LinearLayout>
