@@ -79,9 +79,6 @@ public class AddressListActivity extends Activity implements OnClickListener,
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
-
-        String a ="10";
-
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_addresslist);
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
